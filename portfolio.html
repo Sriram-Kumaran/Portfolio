@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            text-align: center;
+            padding: 3em 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 0.5em;
+            color: #e0e0e0;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            margin-top: 1em;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Section styling */
+        section {
+            padding: 4em 0;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 0.5em;
+        }
+
+        /* About section */
+        #about p {
+            max-width: 600px;
+            margin: auto;
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        /* Skills section */
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5em;
+            flex-wrap: wrap;
+            margin-top: 1em;
+        }
+
+        #skills ul li {
+            background-color: #fff;
+            padding: 0.8em 1.5em;
+            font-size: 1.1em;
+            color: #333;
+            margin: 0.5em;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Projects section */
+        .project-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+
+        .project {
+            padding: 1.5em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.02);
+        }
+
+        .project h3 {
+            font-size: 1.6em;
+            color: #333;
+            margin-bottom: 0.5em;
+        }
+
+        .project p {
+            color: #666;
+            font-size: 1em;
+        }
+
+        /* Contact section */
+        #contact form {
+            max-width: 500px;
+            margin: auto;
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 1em;
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        #contact button {
+            padding: 1em 2em;
+            color: #fff;
+            background-color: #2575fc;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background 0.3s ease;
+        }
+
+        #contact button:hover {
+            background-color: #1a5bb8;
+        }
+
+        /* Contact information styling */
+        .contact-info {
+            font-size: 1.1em;
+            color: #333;
+            margin: 1em 0;
+        }
+
+        .contact-info p {
+            margin: 0.5em 0;
+        }
+
+        .contact-info p strong {
+            color: #2575fc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SRIRAM K</h1>
+        <p>Web Developer | Designer | Programmer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a third-year college student with a strong interest in software development and emerging tech. Currently,
+            I'm expanding my skills in Java Programming and HTML. I enjoy tackling new challenges, especially those that involve innovative solutions in tech.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>HTML & CSS</li>
+            <li>SQL</li>
+            <li>Laravel</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project">
+                <h3>Airline Reservation System using Java
+                    Programming</h3>
+                <p>Developed a robust Airline Reservation System using Java,
+                    enabling users to book, and manage flight reservations. The
+                    system included features like customer login, flight search,
+                    booking confirmation. Implemented object-oriented
+                    programming (OOP) principles and basic GUI using Java Swing</p>
+            </div>
+            <div class="project">
+                <h3>Portfolio Webpage using HTML and CSS</h3>
+                <p>Designed and developed a responsive Portfolio webpage using
+                    HTML and CSS. The webpage showcases personal projects,
+                    skills, and achievements. Implemented clean UI/UX design
+                    principles with smooth navigation, featuring a project gallery,
+                    contact form, and an about section. Focused on accessibility,
+                    cross-browser compatibility, and mobile-first design</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <!-- Contact Information Section -->
+        <div class="contact-info">
+            <p><strong>Email:</strong> sriram4fun246@gmail.com</p>
+            <p><strong>Phone:</strong> +91 9361693670</p>
+        </div>
+
+        <!-- Contact Form -->
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+
+</html>
